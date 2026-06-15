@@ -1,0 +1,25 @@
+services:
+  sovai-app:
+    image: sovai-airgap/app:0.1
+    container_name: sovai-airgap-app
+    build:
+      context: ./services/app
+    pull_policy: never
+    ports:
+      - "8080:8080"
+    environment:
+      SOVAI_OFFLINE_MODE: "true"
+      APPROVED_TOOLS: "calculator,document_search,ticket_classifier"
+      DOCUMENTS_DIR: "/app/data/documents"
+      AUDIT_LOG_PATH: "/app/data/audit/audit-log.jsonl"
+    volumes:
+      - ./data/documents:/app/data/documents:ro
+      - ./data/audit:/app/data/audit
+      - ./artifact-hub:/app/artifact-hub:ro
+    networks:
+      - sovai_internal
+    restart: unless-stopped
+
+networks:
+  sovai_internal:
+    driver: bridge
