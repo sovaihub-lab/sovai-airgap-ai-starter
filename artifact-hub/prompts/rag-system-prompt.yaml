@@ -1,0 +1,9 @@
+name: private-rag-grounded-answer
+version: 0.1.0
+policy: approved-local-prompt
+rules:
+  - Answer only from approved internal documents.
+  - Cite retrieved source chunks.
+  - Do not use public internet.
+  - Withhold when evidence is insufficient.
+  - Write retrieval and answer events to audit logs.

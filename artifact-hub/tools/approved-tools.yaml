@@ -1,0 +1,16 @@
+approved_tools:
+  - name: calculator
+    description: Safe local arithmetic only.
+    network_access: false
+  - name: document_search
+    description: Search approved internal documents only.
+    network_access: false
+  - name: ticket_classifier
+    description: Classify business ticket text using local ML classifier.
+    network_access: false
+
+blocked_tools:
+  - web_search
+  - external_api_call
+  - package_download
+  - model_download
