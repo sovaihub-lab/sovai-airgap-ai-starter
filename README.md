@@ -1,7 +1,8 @@
+
+
+# SovAIHub ([SovAIHub.com](https://SovAIHub.com))
+
 # SovAI Air-Gap AI Starter
-
-SovAIHub ([SovAIHub.com](https://SovAIHub.com))
-
 Open-source laptop MVP for demonstrating an air-gap-ready Sovereign AI pattern.
 
 ## Phase 1: Offline Runtime Demo
