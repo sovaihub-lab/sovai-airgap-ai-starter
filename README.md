@@ -1,3 +1,7 @@
+
+
+# SovAIHub
+# Rana Kumar
 # SovAI Air-Gap AI Starter
 
 Open-source laptop MVP for demonstrating an air-gap-ready Sovereign AI pattern.
