@@ -1,7 +1,6 @@
 
 
-# SovAIHub
-# Rana Kumar
+# SovAIHub (SovAIHub.com)
 # SovAI Air-Gap AI Starter
 
 Open-source laptop MVP for demonstrating an air-gap-ready Sovereign AI pattern.
@@ -85,4 +84,5 @@ This is not a production TL4 platform. It is a laptop reference implementation t
 
 > Runtime workloads consume only approved internal artifacts.
 
+# Rana Kumar
 This version intentionally avoids compiled Python ML dependencies such as scikit-learn, numpy, and scipy so the offline preparation step is simpler on Windows. Later, this can be expanded to local LLM runtime, model registry, vector DB, internal PyPI, internal container registry, Kubernetes, or disconnected OpenShift.
